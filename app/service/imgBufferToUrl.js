@@ -23,11 +23,11 @@ class imgBufferToUrlService extends Service {
     const baseDomain = 'http://pyfdpht1a.bkt.clouddn.com/'
 
     // 需要填写你的 Access Key 和 Secret Key
-    qiniu.conf.ACCESS_KEY = 'V6tZ3AkwGidM7l-ovlpyg1mQlkp9yKqjQl2mWJ34'
-    qiniu.conf.SECRET_KEY = 'F7voGveG3VocGel15dcQfOQmhbua5KVW4Ig7XALh'
+    qiniu.conf.ACCESS_KEY = ''
+    qiniu.conf.SECRET_KEY = ''
 
     // 要上传的空间
-    const bucket = 'image-zhuojiawei'
+    const bucket = ''
 
     // 上传到七牛后保存的文件名
     const key = 'nodejs-logo-' + new Date().getTime() + '.png'
