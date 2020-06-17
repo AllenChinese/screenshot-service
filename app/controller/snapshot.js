@@ -42,7 +42,10 @@ class SnapshotController extends Controller {
     const page = await browser.newPage()
     let snapshotResult = null
 
-    await page.goto(ctx.query.url)
+    const referer = ctx.request.header.referer
+    await page.goto(referer)
+
+    // 截图生成二进制图像
     await page
       .screenshot({
         encoding: 'binary',

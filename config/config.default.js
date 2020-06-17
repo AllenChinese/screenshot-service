@@ -17,6 +17,7 @@ module.exports = appInfo => {
     csrf: {
       enable: false,
     },
+    domainWhiteList: [ 'http://127.0.0.1:8080' ],
   }
 
   // use for cookie sign key, should change to your own and keep security

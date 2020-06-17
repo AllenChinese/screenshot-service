@@ -30,7 +30,7 @@ class imgBufferToUrlService extends Service {
     const bucket = ''
 
     // 上传到七牛后保存的文件名
-    const key = 'nodejs-logo-' + new Date().getTime() + '.png'
+    const key = 'puppeteer-snapshot' + new Date().getTime() + '.png'
 
     // mac
     const mac = new qiniu.auth.digest.Mac(qiniu.conf.ACCESS_KEY, qiniu.conf.SECRET_KEY)
